@@ -75,10 +75,11 @@ h4.inverted {
 }
 
 
-p{
+#textos p{
 font-family:'Planer-Regular';
 margin: 7px;
 padding: 7px;
+text-align:justify;
 }
 p.letrachica{
 	font-size: 16px;
@@ -216,20 +217,53 @@ li, p {
 	margin-bottom: 10px;
 }
 
+ul {
+    list-style: none;
+    padding:0;
+    margin:10px;
+}
 
+li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+    text-align:left;
+}
 
+li:before {
+    content: "• ";
+    color:#D904B5; 
+}
 
-
+.formEval{
+	text-indent: -.7em;
+    text-align:left;
+}
 /*Contenedor de TExtos*/
-
-
+.contenidoForm{
+	margin:10px;
+}
+.barra_separadora {
+    background-color: #B0BF39;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px 0 10px 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 27px;
+    padding: 2px;
+}
 #textos {
 	margin-left: 30px;
 	margin-right: 30px;
+	padding:25px,0px,0px,15px;
 	-webkit-border-radius: 15px;
 	border-radius: 15px;
 	-webkit-box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, .3);
 	box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, .3);
+	
 	background-image: linear-gradient(bottom, rgb(224,224,224) 0%, rgb(252,252,252) 35%);
 	background-image: -o-linear-gradient(bottom, rgb(224,224,224) 0%, rgb(252,252,252) 35%);
 	background-image: -moz-linear-gradient(bottom, rgb(224,224,224) 0%, rgb(252,252,252) 35%);
@@ -283,6 +317,9 @@ li, p {
 	box-shadow: 0px 3px 5px 4px rgba(0, 0, 0, .38);
 }
 
-
+.imgsmall img{
+	width:200px;
+	height:220px;
+}
 
 
