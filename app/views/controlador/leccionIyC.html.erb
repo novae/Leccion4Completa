@@ -16,7 +16,8 @@
 					document.write( '<p style="color: rgba(0,0,0,0.5); text-shadow: none;">('+message+')</p>' );
 				</script>
 				<div id="botones">
-					<a href="#/1" ><%=image_tag("derecha.png")%></a>
+					<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/1" %>
+					
 				</div>
 			</section>
 			
@@ -40,13 +41,14 @@
 				
 				</div>
 				<div id="botones">
-					<a href="#/" ><%=image_tag("izquierda.png")%></a>
-					<a href="#/2" ><%=image_tag("derecha.png")%></a>
+					<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/" %>
+					<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/2" %>
 				</div>
 			</section>
 <!--------------------- seccion -------------------------------------------------->	
 <!-------------------------------------------------------------------------------->
-			<section >
+			<section id ="fondo">
+			
 				<br />
 				<br />
 				<h3>Evaluación Inicial</h3>
@@ -234,8 +236,16 @@
 						</div>
 					</div>
 				</div>
-			</div>		
-			</section>
+
+					
+			</div>	
+
+				<div id="botones">
+				<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/1" %>
+					<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/3" %>	
+				</div>
+</section>	
+		
 						
 			<section id="fondo">
 				<br />
@@ -245,7 +255,8 @@
 				<br />
 				<%=image_tag("icono-ciclo.png")%>
 				<div id="botones">
-					<a href="#/1" ><%=image_tag("derecha.png")%></a>
+					<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/2" %>
+					<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/4" %>
 				</div>
 			</section>
 			
@@ -261,9 +272,10 @@
 					</p>
 				</div>
 				<div id="botones">
-					<a href="#/" ><%=image_tag("izquierda.png")%></a>
-					<a href="#/2" ><%=image_tag("derecha.png")%></a>
+				<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/3" %>
+					<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/5" %>	
 				</div>
+					
 			</section>
 			
 			<!-- Slides Verticales -->
@@ -288,8 +300,8 @@
 					</div>
 						
 					<div id="botones">
-						<a href="#/1" ><%=image_tag("izquierda.png")%></a>
-						<a href="#/2/1" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/4" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/5/1" %>
 					</div>
 				</section>
 				
@@ -300,8 +312,8 @@
 					</div>
 					
 					<div id="botones">
-						<a href="#/2" ><%=image_tag("arriba.png")%></a>
-						<a href="#/2/2" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "Arriba" ), "#/5" %>
+					<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/5/2" %>
 					</div>
 				</section>
 				
@@ -322,8 +334,8 @@
 					</div>
 					<br />
 					<div id="botones">
-						<a href="#/2/1" ><%=image_tag("arriba.png")%></a>
-						<a href="#/2/3" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "Arriba" ), "#/5/1" %>
+					<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/5/3" %>
 					</div>
 				</section>
 				
@@ -334,8 +346,8 @@
 					</div>
 					<br />
 					<div id="botones">
-						<a href="#/2/2" ><%=image_tag("arriba.png")%></a>
-						<a href="#/2/4" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "Arriba" ), "#/5/2" %>
+					<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/5/4" %>
 					</div>
 				</section>
 				
@@ -354,8 +366,8 @@
 						</p>
 					</div>
 					<div id="botones">
-						<a href="#/2/3" ><%=image_tag("arriba.png")%></a>
-						<a href="#/2/5" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "Arriba" ), "#/5/3" %>
+					<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/5/5" %>
 					</div>
 				</section>
 				
@@ -368,64 +380,115 @@
 					<p align="justify"><u>- Valor Final:</u> Después de la ejecución del ciclo el valor del contador, será distinto a su valor inicial, este puede ser mayor o menor que el mismo, todo depende si fue una cuenta creciente o decreciente.</p>
 					<p align="justify"><u>- Valor de Cambio:</u> Es el valor constante en el cual se irá incrementando el contador, este puede ser positivo o negativo; es decir, si la cuanta se realiza de manera ascendente o descendente. </p>
 				
-						<div id="botones">
-						<a href="#/2/4" ><%=image_tag("arriba.png")%></a>
-						<a href="#/3" ><%=image_tag("abajo.png")%></a>
-					</div>
+						
 				</div>
-				
+				<div id="botones">
+						<%= link_to image_tag("arriba.png", alt: "Arriba" ), "#/5/4" %>
+					<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/5/6" %>
+					</div>
 					
 			</section>
+			
+	<!------                                EJERCICIOS 1                        ---->		
 			<section id="fondo">
-				<br />
-				<br />
-				<br />
+				
+		<br />
+				
 				<div class="textosTab">
-					<br />
-					<dl class="tabs contained">
-					  <dd class="active"><a href="#Ejer1">Ejecicio 1</a></dd>
-					  <dd><a href="#Ejer2">Ejercicio 2</a></dd>
-					  <dd class="hide-on-phones"><a href="#Ejer3">Ejercicio 3</a></dd>
-					</dl>
-					<ul class="tabs-content contained">
-					  <li class="active" id="Ejer1Tab">
-					  	<h4>contenido DRAG AND DROP EJER1</h4>
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  </li>
-					  <li id="Ejer2Tab">
-					  	<h4>contenido DRAG AND DROP EJER2</h4>
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  </li>
-					  <li id="Ejer3Tab">
-					  	<h4>contenido DRAG AND DROP EJER3</h4>
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  </li>
-					</ul>
+				<br />
+				<dl class="tabs contained three-up">
+					<dd class="active ">
+						<a href="#simple1">Ejercicio 1</a>
+					</dd>
+					<dd>
+						<a href="#simple2">Ejercicio 2</a>
+					</dd>
+					<dd>
+						<a href="#simple3">Ejercicio 3</a>
+					</dd>
+				</dl>
+
+				<button class="tiny button">Instrucciones</button>
+				<br /><br />
+				<ul class="tabs-content">
+					<li class="active" id="simple1Tab">
+					<div id="Ejercicio1" class="minimo">
+					<div class="contenido_ejercicio five columns"> 
+						<ul class="connectedSortable sortable1">
+							
+							<li class="ui-state-default">variable num tipo entero</li>
+							<li class="ui-state-default">variable prom tipo flotante</li>
+							<li class="ui-state-default">variable suma tipo flotante</li>
+							<li class="ui-state-default">prom = 0.0</li>
+							<li class="ui-state-default">suma = 0.0</li>
+							<li class="ui-state-default">variable i tipo entero</li>
+							<li class="ui-state-default">i = 1</li>
+							<li class="ui-state-default">repite hasta que i==11 sea cierto</li>
+							<li class="ui-state-default">	imprime("Introduce la calificación " + i)</li>
+							<li class="ui-state-default">lee(num)</li>
+							<li class="ui-state-default">suma += num</li>
+							<li class="ui-state-default">i++</li>
+							<li class="ui-state-default">fin_repite</li>
+							<li class="ui-state-default">prom=suma/10</li>
+							<li class="ui-state-default">imprime("El promedio es: " + prom) </li>
+							
+							
+						
+						</ul>
+						</div>
+					<div class="contenido_ejercicio five columns">
+						<ul  class="connectedSortable sortable2">
+							<li class="ui-state-highlight" ></li>
+						</ul>
+					</div>
+					<button class="tiny success button evaluar">Evaluar</button>
+				</div>
+						
+					</li>
+					<li id="simple2Tab">
+				<div id="Ejercicio1" class="minimo">
+				<div class="contenido_ejercicio five columns"> 
+						<ul class="connectedSortable sortable1">
+							<% 5.times do |f|%>
+							<li class="ui-state-default" id="dragg">
+								Linea <%= f%>
+							</li>
+							<%end%>
+						</ul>
+						</div>
+					<div class="contenido_ejercicio five columns">
+						<ul  class="connectedSortable sortable2">
+							<li class="ui-state-highlight"></li>
+						</ul>
+					</div>
+					<button class="tiny success button">Evaluar</button>
 				</div>	
+					</li>
+					<li id="simple3Tab">
+							<div id="Ejercicio1" class="minimo">
+				<div class="contenido_ejercicio five columns"> 
+						<ul class="connectedSortable sortable1">
+							<% 5.times do |f|%>
+							<li class="ui-state-default" id="dragg">
+								Linea <%= f%>
+							</li>
+							<%end%>
+						</ul>
+						</div>
+					<div class="contenido_ejercicio five columns">
+						<ul  class="connectedSortable sortable2">
+							<li class="ui-state-highlight"></li>
+						</ul>
+					</div>
+					<button class="tiny success button">Evaluar</button>
+				</div>	
+					</li>
+				</ul>
+			</div>
+
 				<div id="botones">
-						<a href="#/2/5" ><%=image_tag("arriba.png")%></a>
-						<a href="#/4" ><%=image_tag("derecha.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "Arriba" ), "#/5/5" %>
+					<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/6" %>
 				</div>
 			</section>
 			
@@ -451,8 +514,8 @@
 					</div>
 					<br />
 					<div id="botones">
-						<a href="#/2/5" ><%=image_tag("izquierda.png")%></a>
-						<a href="#/3/1" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("izquierda.png", alt: "izquierda" ), "#/5/6" %>
+					<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/6/1" %>
 					</div>
 				</section>
 
@@ -465,8 +528,8 @@
 						</div>
 					<br />
 						<div id="botones">
-							<a href="#/3" ><%=image_tag("arriba.png")%></a>
-							<a href="#/3/2" ><%=image_tag("abajo.png")%></a>
+							<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/6" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/6/2" %>
 						</div>
 				</section>
 <!----------------------------------------------------------------------------------------->
@@ -486,8 +549,8 @@
 					</div>
 					<br />
 					<div id="botones">
-						<a href="#/3/1" ><%=image_tag("arriba.png")%></a>
-						<a href="#/3/3" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/6/1" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/6/3" %>
 					</div>
 				</section>
 <!----------------------------------------------------------------------------------------->	
@@ -501,8 +564,8 @@
 					<p align="justify">En este ciclo, el bloque de instrucciones dentro de la estructura mientras, se ejecuta cuando la expresión sea verdadera.</p>
 					</div>
 					<div id="botones">
-						<a href="#/3/2" ><%=image_tag("arriba.png")%></a>
-						<a href="#/3/4" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/6/2" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/6/4" %>
 					</div>
 				</section>
 <!----------------------------------------------------------------------------------------->		
@@ -514,10 +577,12 @@
 					</div>
 					<div id="textos">
 					<p align="justify" class="letrachica">Que imprime los números 0, 6, 12, 18, 24, 30, 36, 42 y 48, dado que el contador x inicia en 0, imprime el cero, después de imprimir se indica que se sumen 5 a su valor, pero antes de volver a repetir, el contador se incrementa automáticamente, por lo que avanza de 6 en 6.</div>
-					<div id="botones">
-						<a href="#/3/3" ><%=image_tag("arriba.png")%></a>
-						<a href="#/3/5" ><%=image_tag("abajo.png")%></a>
-					</div>
+					
+					
+<div id="botones">
+						<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/6/3" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/6/5" %>
+</div>
 					
 				</section>
 <!----------------------------------------------------------------------------------------->				
@@ -530,8 +595,8 @@
 					<div id="textos">
 					<p align="justify" >Este ciclo realiza el bloque de instrucciones y después evalúa, si se cumple la expresión regresa a la instrucción repite para volver a realizar el bloque de sentencias, termina cuando deja de cumplirse la expresión.</div>
 					<div id="botones">
-						<a href="#/3/4" ><%=image_tag("arriba.png")%></a>
-						<a href="#/3/6" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/6/4" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/6/6" %>
 					</div>
 				</section>
 <!----------------------------------------------------------------------------------------->	
@@ -543,64 +608,94 @@
 					</div>
 					<div id="textos">
 					<p align="justify" class="letrachica">Este ejemplo imprime los números 0, 5, 10, 15, 20, 25, 30, 35, 40 y 45, dado que el contador x inicia en 0 y después de imprimir se indica que se sumen 5 a su valor, por lo que avanza de 5 en 5.<div id="botones">
-						<a href="#/3/5" ><%=image_tag("arriba.png")%></a>
-						<a href="#/4" ><%=image_tag("abajo.png")%></a>
+						
+
 					</div>
-					
+<div id="botones">
+<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/6/5" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/6/7" %>
+			</div>			
 				</section>
 				
 				<!----------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------->				
 				<section id="fondo">
 				<br />
-				<br />
-				<br />
+				
 				<div class="textosTab">
-					<br />
-					<dl class="tabs contained">
-					  <dd class="active"><a href="#Ejer4">Ejecicio 1</a></dd>
-					  <dd><a href="#Ejer5">Ejercicio 2</a></dd>
-					  <dd class="hide-on-phones"><a href="#Ejer6">Ejercicio 3</a></dd>
-					</dl>
-					<ul class="tabs-content contained">
-					  <li class="active" id="Ejer4Tab">
-					  	<h4>contenido DRAG AND DROP EJER1</h4>
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  </li>
-					  <li id="Ejer5Tab">
-					  	<h4>contenido DRAG AND DROP EJER2</h4>
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  </li>
-					  <li id="Ejer6Tab">
-					  	<h4>contenido DRAG AND DROP EJER3</h4>
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  </li>
-					</ul>
+				<br />
+				<dl class="tabs contained three-up">
+					<dd class="active ">
+						<a href="#simple1">Ejercicio 1</a>
+					</dd>
+					<dd>
+						<a href="#simple2">Ejercicio 2</a>
+					</dd>
+					<dd>
+						<a href="#simple3">Ejercicio 3</a>
+					</dd>
+				</dl>
+				<button class="tiny button">Instrucciones</button>
+				<ul class="tabs-content">
+					<li class="active" id="simple1Tab">
+					<div id="Ejercicio1" class="minimo">
+					<div class="contenido_ejercicio five columns"> 
+						<ul class="connectedSortable sortable1">
+							<% 5.times do |f|%>
+							<li class="ui-state-default" id="dragg">
+								Linea <%= f%>
+							</li>
+							<%end%>
+						</ul>
+						</div>
+					<div class="contenido_ejercicio five columns">
+						<ul  class="connectedSortable sortable2">
+							<li></li>
+						</ul>
+					</div>
+				</div>		
+					</li>
+					<li id="simple2Tab">
+				<div id="Ejercicio1" class="minimo">
+				<div class="contenido_ejercicio five columns"> 
+						<ul class="connectedSortable sortable1">
+							<% 5.times do |f|%>
+							<li class="ui-state-default" id="dragg">
+								Linea <%= f%>
+							</li>
+							<%end%>
+						</ul>
+						</div>
+					<div class="contenido_ejercicio five columns">
+						<ul  class="connectedSortable sortable2">
+							<li></li>
+						</ul>
+					</div>
 				</div>	
+					</li>
+					<li id="simple3Tab">
+							<div id="Ejercicio1" class="minimo">
+				<div class="contenido_ejercicio five columns"> 
+						<ul class="connectedSortable sortable1">
+							<% 5.times do |f|%>
+							<li class="ui-state-default" id="dragg">
+								Linea <%= f%>
+							</li>
+							<%end%>
+						</ul>
+						</div>
+					<div class="contenido_ejercicio five columns">
+						<ul  class="connectedSortable sortable2">
+							<li></li>
+						</ul>
+					</div>
+				</div>	
+					</li>
+				</ul>
+			</div>
 				<div id="botones">
-						<a href="#/5/3" ><%=image_tag("arriba.png")%></a>
-						<a href="#/6" ><%=image_tag("derecha.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/6/6" %>
+					<%= link_to image_tag("derecha.png", alt: "derecha" ), "#/7" %>
 				</div>
 			</section>
 
@@ -628,8 +723,8 @@
 					</div>
 					<br />
 					<div id="botones">
-						<a href="#/3/6" ><%=image_tag("izquierda.png")%></a>
-						<a href="#/4/1" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("izquierda.png", alt: "izquierda" ), "#/6/7" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/7/1" %>
 					</div>
 				</section>
 
@@ -643,8 +738,8 @@
 					</div>
 					<br />
 					<div id="botones">
-						<a href="#/4" ><%=image_tag("arriba.png")%></a>
-						<a href="#/4/2"><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/7" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/7/2" %>
 					</div>
 					
 				</section>
@@ -665,8 +760,8 @@
 					</div>
 					<br />
 					<div id="botones">
-						<a href="#/4/1"><%=image_tag("arriba.png")%></a>
-						<a href="#/4/3"><%=image_tag("abajo.png")%></a>
+					<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/7/1" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/7/3" %>
 					</div>
 				</section>
 <!----------------------------------------------------------------------------------------->	
@@ -678,8 +773,8 @@
 					</div>
 					
 					<div id="botones">
-						<a href="#/4/2" ><%=image_tag("arriba.png")%></a>
-						<a href="#/4/4" ><%=image_tag("abajo.png")%></a>
+					<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/7/2" %>
+					<%= link_to image_tag( "abajo.png" , alt: "abajo" ), "#/7/4" %>
 					</div>
 					
 				</section>
@@ -691,9 +786,11 @@
 							<%=image_tag("ciclo2-3.png")%>
 					</div>
 					<div id="textos">
-					<p align="justify" class="letrachica">Este ejemplo imprime los números 0, 5, 10, 15, 20, 25, 30, 35, 40 y 45, dado que el contador x inicia en 0 y después de imprimir se indica que se sumen 5 a su valor, por lo que avanza de 5 en 5.<div id="botones">
-						<a href="#/4/3" ><%=image_tag("arriba.png")%></a>
-						<a href="#/4/5" ><%=image_tag("abajo.png")%></a>
+					<p align="justify" class="letrachica">Este ejemplo imprime los números 0, 5, 10, 15, 20, 25, 30, 35, 40 y 45, dado que el contador x inicia en 0 y después de imprimir se indica que se sumen 5 a su valor, por lo que avanza de 5 en 5.
+	</div>
+			<div id="botones">
+							<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/7/3" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/7/5" %>
 					</div>
 				</section>
 <!----------------------------------------------------------------------------------------->
@@ -706,8 +803,8 @@
 					<div id="textos">
 					<p align="justify" >Este ciclo deja de realizar el bloque de instrucciones hasta que se cumpla la expresión evaluada.</p>
 						<div id="botones">
-						<a href="#/4/4" ><%=image_tag("arriba.png")%></a>
-						<a href="#/4/6" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/7/4" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/7/6" %>
 						</div>
 				</section>
 <!----------------------------------------------------------------------------------------->	
@@ -720,8 +817,8 @@
 					<div id="textos">
 					<p align="justify" class="letrachica">imprime los números 0, 3, 6, 9, 12, … , 96, dado que el contador x inicia en 0, imprime el cero, después de imprimir se indica que se sumen 2 a su valor, pero antes de volver a repetir, el contador se incrementa automáticamente, por lo que parece que avanza de 3 en 3.
 						<div id="botones">
-						<a href="#/4/5" ><%=image_tag("arriba.png")%></a>
-						<a href="#/5" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/7/5" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/7/7" %>
 					</div>
 				</section>
 				
@@ -729,54 +826,81 @@
 <!----------------------------------------------------------------------------------------->				
 				<section id="fondo">
 				<br />
-				<br />
-				<br />
+				
 				<div class="textosTab">
-					<br />
-					<dl class="tabs contained">
-					  <dd class="active"><a href="#Ejer7">Ejecicio 1</a></dd>
-					  <dd><a href="#Ejer8">Ejercicio 2</a></dd>
-					  <dd class="hide-on-phones"><a href="#Ejer9">Ejercicio 3</a></dd>
-					</dl>
-					<ul class="tabs-content contained">
-					  <li class="active" id="Ejer7Tab">
-					  	<h4>contenido DRAG AND DROP EJER1</h4>
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  </li>
-					  <li id="Ejer8Tab">
-					  	<h4>contenido DRAG AND DROP EJER2</h4>
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  </li>
-					  <li id="Ejer9Tab">
-					  	<h4>contenido DRAG AND DROP EJER3</h4>
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  </li>
-					</ul>
-				</div>
+				<br />
+				<dl class="tabs contained three-up">
+					<dd class="active ">
+						<a href="#simple1">Ejercicio 1</a>
+					</dd>
+					<dd>
+						<a href="#simple2">Ejercicio 2</a>
+					</dd>
+					<dd>
+						<a href="#simple3">Ejercicio 3</a>
+					</dd>
+				</dl>
+				<button class="tiny button">Instrucciones</button>
+				<ul class="tabs-content">
+					<li class="active" id="simple1Tab">
+					<div id="Ejercicio1" class="minimo">
+					<div class="contenido_ejercicio five columns"> 
+						<ul class="connectedSortable sortable1">
+							<% 5.times do |f|%>
+							<li class="ui-state-default" id="dragg">
+								Linea <%= f%>
+							</li>
+							<%end%>
+						</ul>
+						</div>
+					<div class="contenido_ejercicio five columns">
+						<ul  class="connectedSortable sortable2">
+							<li></li>
+						</ul>
+					</div>
+				</div>		
+					</li>
+					<li id="simple2Tab">
+				<div id="Ejercicio1" class="minimo">
+				<div class="contenido_ejercicio five columns"> 
+						<ul class="connectedSortable sortable1">
+							<% 5.times do |f|%>
+							<li class="ui-state-default" id="dragg">
+								Linea <%= f%>
+							</li>
+							<%end%>
+						</ul>
+						</div>
+					<div class="contenido_ejercicio five columns">
+						<ul  class="connectedSortable sortable2">
+							<li></li>
+						</ul>
+					</div>
+				</div>	
+					</li>
+					<li id="simple3Tab">
+							<div id="Ejercicio1" class="minimo">
+				<div class="contenido_ejercicio five columns"> 
+						<ul class="connectedSortable sortable1">
+							<% 5.times do |f|%>
+							<li class="ui-state-default" id="dragg">
+								Linea <%= f%>
+							</li>
+							<%end%>
+						</ul>
+						</div>
+					<div class="contenido_ejercicio five columns">
+						<ul  class="connectedSortable sortable2">
+							<li></li>
+						</ul>
+					</div>
+				</div>	
+					</li>
+				</ul>
+			</div>
 				<div id="botones">
-						<a href="#/5/3" ><%=image_tag("arriba.png")%></a>
-						<a href="#/6" ><%=image_tag("derecha.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/7/6" %>
+					<%= link_to image_tag("derecha.png", alt: "derecha" ), "#/8" %>
 				</div>	
 			</section>
 
@@ -805,8 +929,8 @@
 					</div>
 					<br />
 					<div id="botones">
-						<a href="#/4/6" ><%=image_tag("izquierda.png")%></a>
-						<a href="#/5/1" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("izquierda.png", alt: "izquierda" ), "#/7/7" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/8/1" %>
 					</div>
 				</section>
 
@@ -834,8 +958,8 @@
 					
 					<br />
 					<div id="botones">
-						<a href="#/5" ><%=image_tag("arriba.png")%></a>
-						<a href="#/5/2" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/8" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/8/2" %>
 					</div>
 					
 				</section>
@@ -859,8 +983,8 @@
 					</div>
 					<br />
 					<div id="botones">
-						<a href="#/5/1" ><%=image_tag("arriba.png")%></a>
-						<a href="#/5/3" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/8/1" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/8/3" %>
 					</div>
 					
 				</section>
@@ -885,8 +1009,8 @@
 					</div>
 					<br />
 					<div id="botones">
-						<a href="#/5/2" ><%=image_tag("arriba.png")%></a>
-						<a href="#/5/4" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/8/2" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/8/4" %>
 					</div>
 				</section>
 
@@ -900,8 +1024,8 @@
 					<div id="textos">
 					<p align="justify" class="letrachica">En este caso, se imprimen los números 0, 6, 12, 18, 24, 30, 36, 42 y 48, dado que el contador x inicia en 0, imprime el cero, después de imprimir se indica que se sumen 5 a su valor, pero antes de volver a repetir, el contador se incrementa automáticamente, por lo que parece que avanza de 6 en 6.
 					<div id="botones">
-						<a href="#/5/3" ><%=image_tag("arriba.png")%></a>
-						<a href="#/6" ><%=image_tag("abajo.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/8/3" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/8/5" %>
 					</div>
 					
 				</section>
@@ -910,54 +1034,85 @@
 <!----------------------------------------------------------------------------------------->				
 				<section id="fondo">
 				<br />
-				<br />
-				<br />
+				
 				<div class="textosTab">
-					<br />
-					<dl class="tabs contained">
-					  <dd class="active"><a href="#Ejer10">Ejecicio 1</a></dd>
-					  <dd><a href="#Ejer11">Ejercicio 2</a></dd>
-					  <dd class="hide-on-phones"><a href="#Ejer12">Ejercicio 3</a></dd>
-					</dl>
-					<ul class="tabs-content contained">
-					  <li class="active" id="Ejer10Tab">
-					  	<h4>contenido DRAG AND DROP EJER1</h4>
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  </li>
-					  <li id="Ejer11Tab">
-					  	<h4>contenido DRAG AND DROP EJER2</h4>
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  </li>
-					  <li id="Ejer12Tab">
-					  	<h4>contenido DRAG AND DROP EJER3</h4>
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  	<br />
-					  </li>
-					</ul>
+				<br />
+				<dl class="tabs contained three-up">
+					<dd class="active ">
+						<a href="#simple1">Ejercicio 1</a>
+					</dd>
+					<dd>
+						<a href="#simple2">Ejercicio 2</a>
+					</dd>
+					<dd>
+						<a href="#simple3">Ejercicio 3</a>
+					</dd>
+				</dl>
+				<button class="tiny button">Instrucciones</button>
+				<ul class="tabs-content">
+					<li class="active" id="simple1Tab">
+					<div id="Ejercicio1" class="minimo">
+					<div class="contenido_ejercicio five columns"> 
+						<ul class="connectedSortable sortable1">
+							<% 5.times do |f|%>
+							<li class="ui-state-default" id="dragg">
+								Linea <%= f%>
+							</li>
+							<%end%>
+						</ul>
+						</div>
+					<div class="contenido_ejercicio five columns">
+						<ul  class="connectedSortable sortable2">
+							<li></li>
+						</ul>
+					</div>
+					
+				</div>
+				<button class="tiny success button">Evaluar</button>		
+					</li>
+					
+					<li id="simple2Tab">
+				<div id="Ejercicio2" class="minimo">
+				<div class="contenido_ejercicio five columns"> 
+						<ul class="connectedSortable sortable1">
+							<% 5.times do |f|%>
+							<li class="ui-state-default" id="dragg">
+								Linea <%= f%>
+							</li>
+							<%end%>
+						</ul>
+						</div>
+					<div class="contenido_ejercicio five columns">
+						<ul  class="connectedSortable sortable2">
+							<li></li>
+						</ul>
+					</div>
 				</div>	
+					</li>
+					<li id="simple3Tab">
+							<div id="Ejercicio1" class="minimo">
+				<div class="contenido_ejercicio five columns"> 
+						<ul class="connectedSortable sortable1">
+							<% 5.times do |f|%>
+							<li class="ui-state-default" id="dragg">
+								Linea <%= f%>
+							</li>
+							<%end%>
+						</ul>
+						</div>
+					<div class="contenido_ejercicio five columns">
+						<ul  class="connectedSortable sortable2">
+							<li></li>
+						</ul>
+					</div>
+				</div>	
+					</li>
+				</ul>
+				
+			</div>
 				<div id="botones">
-						<a href="#/5/3" ><%=image_tag("arriba.png")%></a>
-						<a href="#/6" ><%=image_tag("derecha.png")%></a>
+						<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/8/4" %>
+					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/9" %>
 				</div>
 			</section>
 		
@@ -975,8 +1130,8 @@
 					<br />
 					<h1 class="inverted">Fin de la Lección</h1>					
 					<div id="botones">
-						<a href="#/5/4" ><%=image_tag("izquierda.png")%></a>
-						<a href="#" ><%=image_tag("home.png")%></a>
+						<%= link_to image_tag("izquierda.png", alt: "arriba" ), "#/8/5" %>
+					<%= link_to image_tag("home.png", alt: "inicio" ), "#" %>
 					</div>
 				</section>
 		</div>

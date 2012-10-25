@@ -2,3 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.minimo{
+  min-height:300px;
+   
+}
+ .contenido_ejercicio{
+   -webkit-border-radius: 5px;
+    border-radius: 5px;
+   border: 1px solid;
+   min-height:280px;
+   max-height:280px;
+   overflow: auto;
+   margin-right:8px;
+   background: #262721;
+   padding-left: 0px;
+   
+}
+.evaluar{
+  margin:120px 5px 0 8px;
+  
+}
