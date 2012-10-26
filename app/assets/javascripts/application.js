@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require_tree .
+//= require_self
 //= require foundation/app
 //= require jquery.ui.core
 //= require jquery.ui.mouse
@@ -25,6 +25,4 @@
 //= require jquery.ui.sortable
 //= require underscore
 //= require slideshow
-//= require jquery-mousewheel
-//= require jScrollbar.jquery
-//= require jScrollbar.jquery.min
+//= require jquery.tinyscrollbar.min

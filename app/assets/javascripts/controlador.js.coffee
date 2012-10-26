@@ -3,4 +3,4 @@ $(document).ready ->
   $(".sortable1, .sortable2").sortable(connectWith: ".connectedSortable").disableSelection()
   
   ####scrollbars####
-  $('.jScrollbar5').jScrollbar();
+  $('#scrollbar1').tinyscrollbar
