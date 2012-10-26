@@ -47,15 +47,13 @@
 			</section>
 <!--------------------- seccion -------------------------------------------------->	
 <!-------------------------------------------------------------------------------->
-			<section id ="fondo">
-			
+		<section id ="fondo">
 				<br />
 				<br />
 				<h3>Evaluación Inicial</h3>
-			<div id="scrollbar1">	
-				<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-				<div class="viewport">
-					<div class="overview" id="textos">
+			<!--#########################################################################-->
+			<div class="jScrollbar5">
+				<div id="textos">
 						<div class="contenidoForm">
 							<br />
 							<form class="formEval">
@@ -185,7 +183,6 @@
 								</label>
 							</form>
 						</div>
-						
 						<!---->
 						<div class="barra_separadora"></div>
 						<div class="contenidoForm">
@@ -234,17 +231,19 @@
 							      <a id="listo" class="small success button">Terminar</a>
 							</form>
 						</div>
-					</div>
+				</div><!--Textos-->
+			</div>
+			<div class="jScrollbar_draggable">
+					<a href="#" class="draggable"></a>
+				
 				</div>
-
-					
-			</div>	
-
-				<div id="botones">
+			<div class="clr"></div>
+		<!--#########################################################################-->
+			<div id="botones">
 				<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/1" %>
 					<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/3" %>	
 				</div>
-</section>	
+	</section>	
 		
 						
 			<section id="fondo">

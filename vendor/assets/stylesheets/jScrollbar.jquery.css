@@ -1,0 +1,45 @@
+.clr {
+	clear:both;
+	height:0
+}
+
+/***************/
+/** EXEMPLE 5**/
+/***************/
+.jScrollbar5 {
+	width:500px;
+	height:209px;
+	overflow:hidden;
+	position:relative;
+	background-color:#313131;
+	padding:10px
+}
+	.jScrollbar5 .jScrollbar_mask {
+		width:460px;
+		position:relative;
+		top:0;
+	}
+		.jScrollbar5 .jScrollbar_mask p {
+			margin:0;
+			padding:0;
+			color:#FFF;
+			font-size:12px;
+		}
+	.jScrollbar5 .jScrollbar_draggable {
+		float:left;
+		width:12px;
+		height:209px;
+		overflow:hidden;
+		background:none;
+		background-color:#222222;
+		border:1px solid #000;
+		position:relative
+	}
+	.jScrollbar5 .jScrollbar_draggable a.draggable {
+		position:relative;
+		background:transparent url('bg_draggable5.png') no-repeat;
+		display:block;
+		height:52px;
+		width:12px;
+		cursor:s-resize
+	}

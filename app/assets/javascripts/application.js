@@ -24,3 +24,7 @@
 //= require jquery.ui.selectable
 //= require jquery.ui.sortable
 //= require underscore
+//= require slideshow
+//= require jquery-mousewheel
+//= require jScrollbar.jquery
+//= require jScrollbar.jquery.min
