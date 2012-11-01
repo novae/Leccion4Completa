@@ -25,4 +25,6 @@
 //= require jquery.ui.sortable
 //= require underscore
 //= require slideshow
+//= require jquery.tagsinput
+//= jquery.tagsinput
 

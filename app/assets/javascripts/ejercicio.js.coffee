@@ -74,7 +74,9 @@ $(document).ready ->
 
   ############## Edit Element ##############  
  
-  $('#scrollbar1').tinyscrollbar()
+  $('#scrollbar1').tinyscrollbar
+  $("#draggable").draggable
+    cursor: "crosshair"
   
   $("#link-instrucciones").click ->
     contenidoInst='<div class="panel callout radius">'

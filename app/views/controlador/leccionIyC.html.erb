@@ -27,20 +27,10 @@
 				<br />
 				<br />
 				<h3>INTRODUCCIÓN</h3>
-				
-				<div id="textos">
-				<p>
-					Los programas de computadora generalmente se diseñan de lo general a lo particular; Este diseño se basa en una descomposición sucesiva del problema, de tal manera que cada parte conformada realiza una tarea en particular.
-					La programación estructurada permite la escritura de programas fáciles de leer y modificar. En un programa estructurado el flujo lógico se gobierna por las estructuras de control básicas:
-				</p>
-				<ul>
-					<li><strong>Secuenciales: </strong>Ejecuta una sentencia despues de otra.</li>
-					<li><strong>Repetitiva o iterativa: </strong>Repetimos un bloque de sentencias hasta que sea verdadera una determinada condución.</li>
-					<li><strong>Selección: </strong>Se evalúa una expresión y dependiendo del resultado,se decide la siguiente sentencia a ejecutar.</li>
-				</ul>
-				
-				</div>
-				<div id="botones">
+		<!--###################### INTRODUCCIÓN ##############################-->
+				<%= render :template => "controlador/introduccion"%>
+		<!--###################### INTRODUCCIÓN ##############################-->		
+			<div id="botones">
 					<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/" %>
 					<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/2" %>
 				</div>
@@ -56,22 +46,71 @@
 		<!--###################### EVALUACION INICIAL ##############################-->
 			<div id="botones">
 				<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/1" %>
-					<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/3" %>	
+				<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/3" %>	
 			</div>
 		</section>
 		
-	<!---->
-		<section id="fondo">
-			<h3>Estructuras Secuenciales</h3>
 		<!--###################### CONTENIDO TEMA 1 ##############################-->
-				<%= render :template => "controlador/estructuraSecuenciales" %>
-		<!--###################### CONTENIDO TEMA 1 ##############################-->
+		
+		
+		
+		<section>
+			<%= render :template => "controlador/estructuraSecuenciales" %>
+		</section>
+		<!--###################### CONTENIDO TEMA 2 ##############################-->
+		<section>
+			<section id="fondo">
+			<h3>Estructuras Selectivas</h3>
+			<div id="textos">
+				<div class="row">
+					<div class="twelve columns">
+						<p>
+							Las estructuras de selección se utilizan  para escoger  cuáles sentencias se han de ejecutar a continuación.
+							Un programa basado en ejecución secuencial, siempre ejecutará exactamente las mismas acciones; es incapaz de reaccionar en respuesta de situaciones actuales. 
+							Normalmente, los programas necesitan alterar o modificar el flujo de control  de un programa. Así  en la solución  de muchos problemas  se deben tomar acciones diferentes dependiendo del valor de los datos.
+						</p>
+				
+						<ul class="listas">
+							<li>Cálculo  de la superficie sólo si las medidas de los datos son positivas.</li>
+							<li>La ejecución  de una división se realiza, sólo si el divisor no es cero.</li>
+						</ul>
+			
+						<p>
+							Las estructuras selectivas se utilizan para tomar  decisiones lógicas; también se les llama  estructuras de decisión o alternativas.
+							En las estructuras selectivas se evalúa una condición  y en función  del resultado de la misma se realiza una opción u otra.
+							Las condiciones se especifican usando expresiones lógicas.
+						</p>
+				
+					</div>
+				</div>
+			</div>
 			<div id="botones">
-				<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/1" %>
-					<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/3" %>	
+				<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/3" %>
+				<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/5" %>	
 			</div>
 		</section>
-	<!---->
+		
+		<section id="fondo">
+			<h3>Condiciones</h3>
+			<div id="textos">
+				<div class="row">
+					<div class="six columns">
+						<div class="row">
+							<div class="twelve columns centered">
+								<a class="button-bevel green" id="ac6"><span >condicion</span></a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div id="botones">
+				<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/3" %>
+				<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/5" %>	
+			</div>
+		</section>
+			<%= render :template => "controlador/estructurasSelectivas" %>
+		</section>
 	<!---->
 	<!---->
 	<!---->
@@ -135,7 +174,6 @@
 					<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/5/1" %>
 					</div>
 				</section>
-				
 				<section id="fondo">
 					<h4>Mapa conceptual que ilustra los diferentes ciclos</h4>
 					<div id="imagenes">
@@ -147,7 +185,6 @@
 					<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/5/2" %>
 					</div>
 				</section>
-				
 				<section id="fondo">
 					<h3>Funcionamiento de un Ciclo</h3> 
 					<br />
@@ -169,7 +206,6 @@
 					<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/5/3" %>
 					</div>
 				</section>
-				
 				<section id="fondo">
 				<h4>Diagrama de Flujo de un Ciclo</h4>
 					<div id="imagenes">
@@ -181,7 +217,6 @@
 					<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/5/4" %>
 					</div>
 				</section>
-				
 				<section id="fondo">
 					<br />
 					<h3>Para llevar el control de las repeticiones <br /> usa un contador o una bandera.</h3>
@@ -201,72 +236,60 @@
 					<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/5/5" %>
 					</div>
 				</section>
-				
-			
-			
-			<section id="fondo">
-				<h3>Un contador tiene 3 valores distintos</h3>
-				<div id="textos">
-					<p align="justify"><u>- Valor Inicial:</u> Es el valor con el cual se inicia el contador. Generalmente es cero. Esta asignación puede hacerse cuando se declara la variable.</p>
-					<p align="justify"><u>- Valor Final:</u> Después de la ejecución del ciclo el valor del contador, será distinto a su valor inicial, este puede ser mayor o menor que el mismo, todo depende si fue una cuenta creciente o decreciente.</p>
-					<p align="justify"><u>- Valor de Cambio:</u> Es el valor constante en el cual se irá incrementando el contador, este puede ser positivo o negativo; es decir, si la cuanta se realiza de manera ascendente o descendente. </p>
-				
-						
-				</div>
-				<div id="botones">
-						<%= link_to image_tag("arriba.png", alt: "Arriba" ), "#/5/4" %>
-					<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/5/6" %>
+				<section id="fondo">
+					<h3>Un contador tiene 3 valores distintos</h3>
+					<div id="textos">
+						<p align="justify"><u>- Valor Inicial:</u> Es el valor con el cual se inicia el contador. Generalmente es cero. Esta asignación puede hacerse cuando se declara la variable.</p>
+						<p align="justify"><u>- Valor Final:</u> Después de la ejecución del ciclo el valor del contador, será distinto a su valor inicial, este puede ser mayor o menor que el mismo, todo depende si fue una cuenta creciente o decreciente.</p>
+						<p align="justify"><u>- Valor de Cambio:</u> Es el valor constante en el cual se irá incrementando el contador, este puede ser positivo o negativo; es decir, si la cuanta se realiza de manera ascendente o descendente. </p>
 					</div>
-					
-			</section>
-			
-	<!------                                EJERCICIOS 1                        ---->		
-			<section id="fondo">
-				
-		<br />
-				
-				<div class="textosTab">
-				<br />
-				<dl class="tabs contained three-up">
-					<dd class="active ">
-						<a href="#simple1">Ejercicio 1</a>
-					</dd>
-					<dd>
-						<a href="#simple2">Ejercicio 2</a>
-					</dd>
-					<dd>
-						<a href="#simple3">Ejercicio 3</a>
-					</dd>
-				</dl>
+					<div id="botones">
+						<%= link_to image_tag("arriba.png", alt: "Arriba" ), "#/5/4" %>
+						<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/5/6" %>
+					</div>
+				</section>
+			<!------ EJERCICIOS 1  ---->		
+				<section id="fondo">
+					<br />
+					<div class="textosTab">
+						<br />
+						<dl class="tabs contained three-up">
+							<dd class="active ">
+								<a href="#simple1">Ejercicio 1</a>
+							</dd>
+							<dd>
+								<a href="#simple2">Ejercicio 2</a>
+							</dd>
+							<dd>
+								<a href="#simple3">Ejercicio 3</a>
+							</dd>
+						</dl>
 
-				<button class="tiny button">Instrucciones</button>
-				<br /><br />
-				<ul class="tabs-content">
-					<li class="active" id="simple1Tab">
-					<div id="Ejercicio1" class="minimo">
-					<div class="contenido_ejercicio five columns"> 
-						<ul class="connectedSortable sortable1">
-							
-							<li class="ui-state-default">variable num tipo entero</li>
-							<li class="ui-state-default">variable prom tipo flotante</li>
-							<li class="ui-state-default">variable suma tipo flotante</li>
-							<li class="ui-state-default">prom = 0.0</li>
-							<li class="ui-state-default">suma = 0.0</li>
-							<li class="ui-state-default">variable i tipo entero</li>
-							<li class="ui-state-default">i = 1</li>
-							<li class="ui-state-default">repite hasta que i==11 sea cierto</li>
-							<li class="ui-state-default">	imprime("Introduce la calificación " + i)</li>
-							<li class="ui-state-default">lee(num)</li>
-							<li class="ui-state-default">suma += num</li>
-							<li class="ui-state-default">i++</li>
-							<li class="ui-state-default">fin_repite</li>
-							<li class="ui-state-default">prom=suma/10</li>
-							<li class="ui-state-default">imprime("El promedio es: " + prom) </li>
-							
-							
-						
-						</ul>
-						</div>
+						<button class="tiny button">Instrucciones</button>
+						<br /><br />
+					
+						<ul class="tabs-content">
+							<li class="active" id="simple1Tab">
+							<div id="Ejercicio1" class="minimo">
+							<div class="contenido_ejercicio five columns"> 
+							<ul class="connectedSortable sortable1">
+									<li class="ui-state-default">variable num tipo entero</li>
+									<li class="ui-state-default">variable prom tipo flotante</li>
+									<li class="ui-state-default">variable suma tipo flotante</li>
+									<li class="ui-state-default">prom = 0.0</li>
+									<li class="ui-state-default">suma = 0.0</li>
+									<li class="ui-state-default">variable i tipo entero</li>
+									<li class="ui-state-default">i = 1</li>
+									<li class="ui-state-default">repite hasta que i==11 sea cierto</li>
+									<li class="ui-state-default">	imprime("Introduce la calificación " + i)</li>
+									<li class="ui-state-default">lee(num)</li>
+									<li class="ui-state-default">suma += num</li>
+									<li class="ui-state-default">i++</li>
+									<li class="ui-state-default">fin_repite</li>
+									<li class="ui-state-default">prom=suma/10</li>
+									<li class="ui-state-default">imprime("El promedio es: " + prom) </li>
+								</ul>
+							</div>
 					<div class="contenido_ejercicio five columns">
 						<ul  class="connectedSortable sortable2">
 							<li class="ui-state-highlight" ></li>
@@ -276,57 +299,55 @@
 				</div>
 						
 					</li>
-					<li id="simple2Tab">
-				<div id="Ejercicio1" class="minimo">
-				<div class="contenido_ejercicio five columns"> 
-						<ul class="connectedSortable sortable1">
-							<% 5.times do |f|%>
-							<li class="ui-state-default" id="dragg">
-								Linea <%= f%>
-							</li>
-							<%end%>
-						</ul>
-						</div>
-					<div class="contenido_ejercicio five columns">
-						<ul  class="connectedSortable sortable2">
-							<li class="ui-state-highlight"></li>
-						</ul>
-					</div>
-					<button class="tiny success button">Evaluar</button>
-				</div>	
-					</li>
-					<li id="simple3Tab">
+							<li id="simple2Tab">
 							<div id="Ejercicio1" class="minimo">
-				<div class="contenido_ejercicio five columns"> 
-						<ul class="connectedSortable sortable1">
-							<% 5.times do |f|%>
-							<li class="ui-state-default" id="dragg">
-								Linea <%= f%>
-							</li>
-							<%end%>
-						</ul>
-						</div>
-					<div class="contenido_ejercicio five columns">
-						<ul  class="connectedSortable sortable2">
-							<li class="ui-state-highlight"></li>
+								<div class="contenido_ejercicio five columns"> 
+									<ul class="connectedSortable sortable1">
+										<% 5.times do |f|%>
+											<li class="ui-state-default" id="dragg">
+												Linea <%= f%>
+											</li>
+										<%end%>
+									</ul>
+								</div>
+								<div class="contenido_ejercicio five columns">
+									<ul  class="connectedSortable sortable2">
+										<li class="ui-state-highlight"></li>
+									</ul>
+								</div>
+								<button class="tiny success button">Evaluar</button>
+							</div>	
+						</li>
+							<li id="simple3Tab">
+							<div id="Ejercicio1" class="minimo">
+								<div class="contenido_ejercicio five columns"> 
+									<ul class="connectedSortable sortable1">
+										<% 5.times do |f|%>
+											<li class="ui-state-default" id="dragg">
+												Linea <%= f%>
+											</li>
+										<%end%>
+									</ul>
+								</div>
+								<div class="contenido_ejercicio five columns">
+									<ul  class="connectedSortable sortable2">
+										<li class="ui-state-highlight"></li>
+									</ul>
+								</div>
+									<button class="tiny success button">Evaluar</button>
+							</div>	
+						</li>
 						</ul>
 					</div>
-					<button class="tiny success button">Evaluar</button>
-				</div>	
-					</li>
-				</ul>
-			</div>
 
-				<div id="botones">
+					<div id="botones">
 						<%= link_to image_tag("arriba.png", alt: "Arriba" ), "#/5/5" %>
-					<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/6" %>
-				</div>
-			</section>
-			
-			
+						<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/6" %>
+					</div>
+				</section>
 			</section>
 <!---------------------Nueva Columna-------------------------------------------------->	
-<!----------------------------------------------------------------------------------------->		
+<!------------------------------------------------------------------------------------>		
 			<section>
 				<section id="fondo">
 					<br />

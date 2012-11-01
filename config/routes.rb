@@ -2,7 +2,8 @@ Residencias::Application.routes.draw do
   get "evaluaciones/evalInicial"
 
   get "controlador/leccionIyC"
-  get "controlador/estructuraSecuenciales"
+  get "controlador/introduccion"
+  get "controlador/estructurasSelectivas"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

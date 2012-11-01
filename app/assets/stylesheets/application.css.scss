@@ -9,9 +9,13 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require foundation_and_overrides
- *= require_tree .
  *= require jquery.ui.core
  *= require jquery.ui.theme
- *= require main
  */
+ @import "main.css.scss";  
+ @import "foundation_and_overrides.scss";
+ @import "controlador.css.scss";
+ @import "jquery.tagsinput.css"
+ 
+ 
+ 
