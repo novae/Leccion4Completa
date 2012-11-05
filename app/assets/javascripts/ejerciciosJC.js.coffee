@@ -3,8 +3,8 @@ $(document).ready ->
   BdItemList = new Array()
   
   $(".logo").jqFloat
-    width:5,
-    height:20,
+    width:3,
+    height:30,
     speed:1500,
     minHeight:280
   
