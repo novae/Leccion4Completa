@@ -1,3 +1,8 @@
+html, body {
+  font-family: 'MyFont';
+  background: #98ECFE;
+}
+
 
 .minimo{
   min-height:300px;
@@ -20,10 +25,6 @@
   
 }
 
-.listas li:before {
-  content: "• ";
-  color:#D904B5;
-}
 #preguntas{
   max-height:342px;
   overflow:auto;
@@ -427,11 +428,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', end
     transform: scale(0);
     opacity: 0; }
   .ch-info-back {
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -o-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
     opacity: 1;
     pointer-events: auto; } }
     

@@ -124,6 +124,11 @@ box-shadow: inset 0px 0px 7px 7px rgba(0, 0, 0, .1);
   -moz-perspective: 600px;
   -moz-perspective-origin: 50% 25%;
   > section {
+    line-height: 1.2em;
+    text-shadow: 0px 0px 2px #fff, 0px 0px 4px #bbb;
+    font-weight: 600;
+    -webkit-box-shadow: inset 0px 1px 9px 2px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 1px 9px 2px rgba(0, 0, 0, 1);
     display: none;
     -webkit-border-radius: 8px;
     border-radius: 15px;
@@ -139,6 +144,8 @@ box-shadow: inset 0px 0px 7px 7px rgba(0, 0, 0, .1);
     -o-transition: all 500ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
     transition: all 500ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
     > section {
+      -webkit-box-shadow: inset 0px 1px 9px 2px rgba(0, 0, 0, 1);
+      box-shadow: inset 0px 1px 9px 2px rgba(0, 0, 0, 1);
       display: none;
       -webkit-border-radius: 8px;
       border-radius: 15px;
@@ -192,13 +199,6 @@ box-shadow: inset 0px 0px 7px 7px rgba(0, 0, 0, .1);
 /*********************************************
  * DEFAULT ELEMENT STYLES
  *********************************************/
-
-#main>section {
-	line-height: 1.2em;
-	text-shadow: 0px 0px 2px #fff, 0px 0px 4px #bbb;
-	font-weight: 600;
-}
-
 ol {
 	list-style: decimal;
 	list-style-position: inside;
@@ -215,21 +215,22 @@ ul {
     margin-left:3px;
 }
 
-li { 
-    padding-left: 2em; 
-    text-indent: -.7em;
-    text-align:left;
+
+.listas li:before {
+  text-align:left;
+  content: "- ";
+  color:#D904B5;
 }
 
 .formEval{
 	text-indent: -.7em;
-    text-align:left;
+  text-align:left;
 }
+
 /*Contenedor de TExtos*/
 .contenidoForm{
 	margin:10px;
 	min-height:100%
-	
 }
 
 @mixin degradado-textos {
