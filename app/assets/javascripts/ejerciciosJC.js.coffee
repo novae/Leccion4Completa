@@ -3,14 +3,15 @@ $(document).ready ->
   BdItemList = new Array()
   
   $(".logo").jqFloat
-    width:3,
+    width:1,
     height:30,
-    speed:1500,
+    speed:1400,
     minHeight:280
   
   $('#tag1').tagsInput {
-    'height':'200px',
-    'width':'500px',
+    'height':'200px'
+    'width':'500px'
+    'defaultText':'Sentencia'
   }
   
   $("#draggable").draggable()  
