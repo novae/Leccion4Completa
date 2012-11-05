@@ -2,11 +2,11 @@ $(document).ready ->
   objectItemList = new Array()
   BdItemList = new Array()
   
-  $(".logo").jqFloat() ->
+  $(".logo").jqFloat
     width:5,
-    height:30,
+    height:20,
     speed:1500,
-    minHeight:300
+    minHeight:280
   
   $('#tag1').tagsInput {
     'height':'200px',
