@@ -1,13 +1,20 @@
 $(document).ready ->
   objectItemList = new Array()
   BdItemList = new Array()
+  
+  $(".logo").jqFloat() ->
+    width:5,
+    height:30,
+    speed:1500,
+    minHeight:300
+  
   $('#tag1').tagsInput {
     'height':'200px',
     'width':'500px',
   }
   
- 
-  
+  $("#draggable").draggable()  
+
   #### constructor para objetos de bd y ul ####
   class itemList
     keyList = [] 

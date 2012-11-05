@@ -470,6 +470,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49c0f0', end
         margin:30,30,0,0;
 }
 
+.logo{
+  height:300px;
+  width:300px;
+  margin:50px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background:url(LogoLeccion4.png) no-repeat 0 bottom;
+  z-index:7;
+}
 
 
 

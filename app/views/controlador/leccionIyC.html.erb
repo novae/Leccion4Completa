@@ -1,20 +1,42 @@
 		<!-- Any section element inside of this container is displayed as a slide -->
 		<div id="main">
 			<section id="fondo">
-				<br />
-				<br />
-				<h3>Leccion 4</h3>
-				<br />
-				<br />
-				<div class="imgsmall">
-					<%=image_tag("LogoLeccion4.png")%>	
+				<div class="row">
+					<div class="four columns centered">
+						<div class="row">
+							<h3>Leccion 4</h3>
+							<br />
+							<br />
+							<br />
+							<br />
+							<br />
+							<br />
+							<br />
+							<br />
+						</div>
+						<div class="row">
+							<br />
+							<br />
+							<br />
+							<br />
+							<br />
+							<br />
+							<br />
+							<br />
+							<div class="logo"></div>
+						</div>
+						<div class="row">
+							<script>
+								var message = navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ? 'Presiona para Navegar' : 'Para navegar utiliza las flechas del Teclado o los Botones';
+								document.write( '<p style="color: rgba(0,0,0,0.5); text-shadow: none;">('+message+')</p>' );
+							</script>
+						</div>
+					</div>
 				</div>
 				
-				<script>
-					// Delicously hacky. Look away.
-					var message = navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ? 'Presiona para Navegar' : 'Para navegar utiliza las flechas del Teclado o los Botones';
-					document.write( '<p style="color: rgba(0,0,0,0.5); text-shadow: none;">('+message+')</p>' );
-				</script>
+				
+				
+				
 				<div id="botones">
 					<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/1" %>
 					
