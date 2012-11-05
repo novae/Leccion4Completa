@@ -20,11 +20,11 @@
 			</div>
 			<div class="four columns">
 				    <div class="row"><a class="button-bevel orange" id="ac1"> Acción 1 </a></div>
-				    <div class="row"><%=image_tag 'arrowDown.png',:class=>"arrowsmall" %></div>
+				    <div class="row"><%= image_tag("arrowejerdown.png", :mouseover => "arrowejeractive.png",:class=>"arrowsmall") %></div>
 					<div class="row"><a class="button-bevel orange" id="ac2"> Acción 2 </a></div>
-					<div class="row"><%=image_tag 'arrowDown.png',:class=>"arrowsmall" %></div>
+					<div class="row"><%= image_tag("arrowejerdown.png", :mouseover => "arrowejeractive.png",:class=>"arrowsmall") %></div>
 					<div class="row"><a class="button-bevel orange" id="ac2"> Acción 3 </a></div>
-					<div class="row"><%=image_tag 'arrowDown.png',:class=>"arrowsmall" %></div>
+					<div class="row"><%= image_tag("arrowejerdown.png", :mouseover => "arrowejeractive.png",:class=>"arrowsmall") %></div>
 					<br />
 			</div>	
 		</div>
@@ -41,13 +41,13 @@
 		<br />
 		<div class="row">
 			<div class="five columns">
-				<div class="row"><%=image_tag 'arrowDown.png',:class =>"arrowsmall"%></div>
+				<div class="row"><%= image_tag("arrowejerdown.png", :mouseover => "arrowejeractive.png",:class=>"arrowsmall") %></div>
 				<div class="row"><a class="button-bevel magenta"> leer x <br /> leer y</a></div>
-				<div class="row"><%=image_tag 'arrowDown.png',:class =>"arrowsmall"%></div>
+				<div class="row"><%= image_tag("arrowejerdown.png", :mouseover => "arrowejeractive.png",:class=>"arrowsmall") %></div>
 				<div class="row"><a class="button-bevel cyan">res = x - y </a></div>
-				<div class="row"><%=image_tag 'arrowDown.png',:class =>"arrowsmall"%></div>	
+				<div class="row"><%= image_tag("arrowejerdown.png", :mouseover => "arrowejeractive.png",:class=>"arrowsmall") %></div>
 				<div class="row"><a class="button-bevel magenta">imprime(res)</a></div>
-				<div class="row"><%=image_tag 'arrowDown.png',:class =>"arrowsmall"%></div>	
+				<div class="row"><%= image_tag("arrowejerdown.png", :mouseover => "arrowejeractive.png",:class=>"arrowsmall") %></div>
 				<br/>
 			</div>
 			<div class="seven columns">
@@ -86,13 +86,13 @@
 		<br />
 		<div class="row">
 			<div class="five columns">
-				<div class="row"><%=image_tag 'arrowDown.png',:class =>"arrowsmall"%></div>
+				<div class="row"><%= image_tag("arrowejerdown.png", :mouseover => "arrowejeractive.png",:class=>"arrowsmall") %></div>
 				<div class="row"><a class="button-bevel magenta"> leer x <br /> leer y</a></div>
-				<div class="row"><%=image_tag 'arrowDown.png',:class =>"arrowsmall"%></div>
+				<div class="row"><%= image_tag("arrowejerdown.png", :mouseover => "arrowejeractive.png",:class=>"arrowsmall") %></div>
 				<div class="row"><a class="button-bevel cyan">res = x - y <br /> sum = x + y<br /> mul = x + y <br /> div = x + y</a></div>
-				<div class="row"><%=image_tag 'arrowDown.png',:class =>"arrowsmall"%></div>	
+				<div class="row"><%= image_tag("arrowejerdown.png", :mouseover => "arrowejeractive.png",:class=>"arrowsmall") %></div>	
 				<div class="row"><a class="button-bevel magenta">imprime(res) <br /> imprime(sum) <br /> imprime(mul) <br/> imprime(div)</a></div>
-				<div class="row"><%=image_tag 'arrowDown.png',:class =>"arrowsmall"%></div>	
+				<div class="row"><%= image_tag("arrowejerdown.png", :mouseover => "arrowejeractive.png",:class=>"arrowsmall") %></div>	
 				<br/>
 			</div>
 			<div class="seven columns">
@@ -138,7 +138,6 @@
 <section id="fondo">
 	<br />
 	<div class="row">
-		<div class="twelve columns centered">		
 			<div class="textosTab">
 				<br />
 				<dl class="tabs contained three-up">
@@ -146,33 +145,33 @@
 					<dd><a href="#select2">Ejercicio 2</a></dd>
 					<dd><a href="#select3">Ejercicio 3</a></dd>
 				</dl>
-				<div class="row">
-					<div class="twelve columns">
-						<ul class="tabs-content">
+				<div class="twelve columns">
+					
+					<ul class="tabs-content">
+						<li class="active" id="select1Tab">
+							<br/>
+							<div class="row">
+							<div class="five columns" id="lista">
+		  						<ul id="sortable" class="selectable">
+									<%@random.each do |p|%>
+						  				<li id="<%=p.id%>" class="ui-state-default">
+				  		  					<span class="ui-icon ui-icon-arrowthick-2-n-s"></span><%=p.sentencia%>
+				  		  				</li>
+        							<%end%>	
+				  				</ul>
+							</div>
 							
-								<li class="active" id="select1Tab">
-								<br/>
-									<div class="five columns" id="lista">
-		  								<ul id="sortable" class="selectable">
-											<%@random.each do |p|%>
-						  						<li id="<%=p.id%>" class="ui-state-default">
-				  		  							<span class="ui-icon ui-icon-arrowthick-2-n-s"></span><%=p.sentencia%>
-				  		  						</li>
-        									<%end%>	
-				  						</ul>
-									</div>
-									<div class="six columns">
-										<div class="row">
+							<div class="six columns">
+								<div class="row">
 											<div class="twelve columns">
 												<ul class="breadcrumbs">
 						  							<li><a id="link-instrucciones">Instrucciones</a></li>
 						  							<li><a id="link-ejer1">Ejercicio 1.1</a></li>
-						  							<li class="unavailable"><a id="link-ejer2">Ejercicio 1.2</a></li>
-												</ul>
+						  						</ul>
 											</div>
 										</div>
-										<div class="row">
-											<form>
+								<div class="row">
+										<form>
 												<br />
 							  					<label class="left inline">Sentencia:</label>
 							  					<br />
@@ -180,48 +179,92 @@
 							     				<a id="listo" class="small success button">Listo!</a>
 							     				<br />
 							  				</form> 
-										</div>
-										<div class="row">
-										<br />
-											<div id="contenidos" class="twelve columns"></div>	<!--controles-->
-										</div>
-									</div>
-								</li>
-								
-							
-							<li id="select2Tab"><h3>contenido 2</h3></li>
-							<li id="select3Tab"><h3>contenido 3</h3></li>
-						</ul><!--content-->
-					</div><!--twelvw columns-->
-				</div><!--row-->
-			
-			</div><!--Textos Tab-->
-		</div> <!--twelve columns-->
-		
-		<div id="myModal" class="reveal-modal">
-  			<ul class="ch-grid">
-				<li>
-					<div class="ch-item ch-img-1">				
-						<div class="ch-info-wrap">
-							<div class="ch-info">
-								<div class="ch-info-front ch-img-1"></div>
-									<div class="ch-info-back">
-										<h3>Terminaste!</h3>
-										<p>Ejercicio No 1</p>
-									</div>	
 								</div>
 							</div>
-					</div>
-				</li>
-			</ul>
-  			<a class="close-reveal-modal">&#215;</a>
-		</div>
-	
+						</li>
+								
+						<li id="select2Tab">
+							<div class="row">
+								<div class="twelve columns">
+									<div id="wrapper">
+										<p>Ingresa lineas de codigo correspondientes: 
+											<input id="tag1" value="" />
+										</p>
+									</div>​	
+								</div>
+							</div>​
+						</li>
+						
+						<li id="select3Tab">
+							<div class="row">
+								<div class="eight columns" id="preguntas">
+									<br />
+									<div class="row">
+										<div class="eleven columns">
+											<div class="panel callout radius">
+									      	<h5>Escribe la sentencia condicional correcta para "¿es número par?"</h5>
+									      	<p>&lt Condicion ></p>
+									    	</div>
+								    	</div>
+								    </div>
+								    
+								    <div class="row">
+								    	<div class="eleven columns">
+											<div class="panel callout radius">
+									      	<h5>Escribe la sentencia condicional correcta para "¿es mayor de 18 años y es varon?"</h5>
+									      	<p>&lt Condicion ></p>
+									    	</div>
+								    	</div>
+								    </div>
+								    
+								    <div class="row">
+								    	<div class="eleven columns">
+											<div class="panel callout radius">
+									      	<h5>Escribe la sentencia condicional correcta para "¿Es alumno del tecnologico y estudia Ing.Sistemas?"</h5>
+									      	<p>&lt Condicion ></p>
+									    	</div>
+								    	</div>
+								    </div>
+								    
+								    <div class="row">
+								    	<div class="eleven columns">
+											<div class="panel callout radius">
+									      	<h5>Escribe la sentencia condicional correcta para "¿Es un número?"</h5>
+									      	<p>&lt Condicion ></p>
+									    	</div>
+								    	</div>
+								    </div>
+								</div>
+								<div class="four columns" id="respuestas">
+									<div class="row">
+										<div class="eleven columns">
+											<div id="draggable" class="dragme">
+											    <p>Drag me around</p>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</li>
+					</ul><!--content-->
+					
+				</div><!--row-->
+			</div><!--Textos Tab-->
+		
+		
+			<div id="myModal" class="reveal-modal">
+  				<div class="row">
+					<br />
+					<div id="contenidos" class="twelve columns"></div>	<!--controles-->
+				</div>
+  				<a class="close-reveal-modal">&#215;</a>
+			</div>
+		
 		<div id="botones">
 			<%= link_to image_tag("arriba.png", alt: "arriba" ), "#/1" %>
 			<%= link_to image_tag("derecha.png", alt: "derecha" ), "#/3" %>
 		</div>
-		
 	</div>
 </section>	
 

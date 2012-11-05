@@ -12,10 +12,13 @@
  *= require jquery.ui.core
  *= require jquery.ui.theme
  */
+ @import "jquery.tagsinput.css.scss";
  @import "main.css.scss";  
  @import "foundation_and_overrides.scss";
  @import "controlador.css.scss";
- @import "jquery.tagsinput.css"
+ @import "jScrollPane.css.scss";
+ 
+ 
  
  
  
