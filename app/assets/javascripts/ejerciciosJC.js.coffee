@@ -5,7 +5,7 @@ $(document).ready ->
   $(".logo").jqFloat
     width:1,
     height:30,
-    speed:1400,
+    speed:1000,
     minHeight:280
   
   $('#tag1').tagsInput {
@@ -85,7 +85,7 @@ $(document).ready ->
   ############## Edit Element ##############  
     contenidoInst='<div class="panel callout radius">'
     contenidoInst+='<h5>INSTRUCCIONES</h5>'
-    contenidoInst+='<ul>'
+    contenidoInst+='<ul class="listas">'
     contenidoInst+='<li>Escribir una nueva sentencia para completar el codigo, si es necesario.</li>'
     contenidoInst+='<li>Arrastrar la nueva sentencia a la lista de la izquierda.</li>'
     contenidoInst+='<li>Arrastrar la nueva sentencia a la lista de la izquierda.</li>'

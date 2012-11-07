@@ -12,6 +12,9 @@ class ControladorController < ApplicationController
       gon.id << p.id
       gon.sentencia << p.sentencia
     end
+    @ejercicio=DetalleEjercicio.all.to_a.shuffle
+    gon.lineas_ejercicios=DetalleEjercicio.all
+    gon.problema= ControladorHelper::Enuciados_Ejercicios 
   end
   def intro
     

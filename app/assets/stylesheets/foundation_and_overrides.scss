@@ -76,3 +76,18 @@
 // $tooltipFontSizeScreenSmall: 14;
 // $tooltipBackgroundOpacityScreenSmall: 0.85;
 @import 'foundation';
+div.alert-box {
+
+margin: 1px 3px 0px 3px;
+padding: 2px 2px 2px;
+display:none;
+
+}
+.panel{
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+.reveal-modal p{
+  font-size:13px;   
+}

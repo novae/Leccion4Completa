@@ -4,6 +4,7 @@ Residencias::Application.routes.draw do
   get "controlador/leccionIyC"
   get "controlador/introduccion"
   get "controlador/estructurasSelectivas"
+  get "controlador/estructurasIterativas"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

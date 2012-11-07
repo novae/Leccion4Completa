@@ -3,32 +3,85 @@ html, body {
   background: #98ECFE;
 }
 
+ol {
+  list-style: decimal;
+  list-style-position: inside;
+}
 
-.listas li:before {
-  text-align:left;
-  content: "- ";
-  color:#D904B5;
+li, p {
+  margin-bottom: 8px;
 }
-.minimo{
-  min-height:300px;
-   
+
+ul .listas{
+    list-style: none;
+    padding:0;
+    margin-top:10px;
+     li:before {
+      text-align:left;
+      content: "-";
+      color:#D904B5;
+    }
 }
- .contenido_ejercicio{
-   -webkit-border-radius: 5px;
-    border-radius: 5px;
-   border: 1px solid;
-   min-height:280px;
-   max-height:280px;
-   overflow: auto;
-   margin-right:8px;
-   background: #262721;
-   padding-left: 0px;
-   
-}
-.evaluar{
-  margin:120px 5px 0 8px;
+
+
+
+
+.minimo {
+  min-height: 300px;
+  .contenido_ejercicio ul{
+    
+    margin-top:15px;
+    li{
+     
+    }
+  }
   
 }
+
+#area_1{
+
+  background-color: #262721;
+  color:#FFEAA7;
+}
+.contenido_ejercicio {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+  min-height: 290px;
+  max-height: 290px;
+  margin: 2px 5px 0px 4px;
+  background: #262721;
+  overflow:hidden;
+  ul li {
+    cursor: pointer;
+  }
+}
+
+
+.botones-ejercicio {
+  margin: 10px 0px 0px 0px;
+}
+
+ul li.lineas-codigo {
+  background: #FFEAA7;
+  margin-bottom: 3px;
+  font-size: 13px;
+  font-family: monaco, monospace;
+  z-index:3;
+  margin-left: -20px;
+}
+ul li.lineas-codigo-error{
+  background: #CA0000;
+  margin-bottom: 3px;
+  font-size: 13px;
+  font-family: monaco, monospace;
+  color:#fff;
+}
+
+.listas li:before {
+  color:#D904B5;
+}
+
 
 #preguntas{
   min-height:342px;

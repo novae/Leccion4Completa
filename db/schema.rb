@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121029123904) do
+ActiveRecord::Schema.define(:version => 20121105184248) do
+
+  create_table "detalle_ejercicios", :force => true do |t|
+    t.integer  "IdModulo"
+    t.integer  "Ejercicio"
+    t.integer  "Orden"
+    t.string   "Linea"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "sentecia", :force => true do |t|
     t.string   "palabras"
