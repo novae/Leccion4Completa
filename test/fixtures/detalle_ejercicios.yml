@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  IdModulo: 1
+  Ejercicio: 1
+  Orden: 1
+  Linea: MyString
+
+two:
+  IdModulo: 1
+  Ejercicio: 1
+  Orden: 1
+  Linea: MyString
