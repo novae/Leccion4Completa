@@ -1,5 +1,5 @@
 <div id="main">
-	<section id="fondo">
+	<section class="fondo">
 		<div class="row">
 			<div class="four columns centered">
 				<div class="row">
@@ -36,10 +36,13 @@
 		</div>
 	</section>
 			
-	<section id="fondo">
-		<br />
-		<br />
-		<h3>INTRODUCCIÓN</h3>
+	<section class="fondo">
+		<div class=row>
+			<div class="eleven columns">
+				<h3>INTRODUCCIÓN</h3>	
+			</div>
+		</div>
+		
 		<%= render :template => "controlador/introduccion"%>
 		<div id="botones">
 			<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/" %>
