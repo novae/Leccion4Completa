@@ -1,6 +1,5 @@
 Residencias::Application.routes.draw do
   get "evaluaciones/evalInicial"
-
   get "controlador/leccionIyC"
   get "controlador/introduccion"
   get "controlador/estructurasSelectivas"
