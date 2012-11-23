@@ -1,12 +1,11 @@
-		<!-- Any section element inside of this container is displayed as a slide -->
-		<div id="main">
-			<section id="fondo">
+<div id="main">
+	<section id="fondo">
+		<div class="row">
+			<div class="four columns centered">
 				<div class="row">
-					<div class="four columns centered">
-						<div class="row">
-							<h3>Leccion 4</h3>
-						</div>
-						<div class="row">
+					<h3>Leccion 4</h3>
+				</div>
+				<div class="row">
 							<br />
 							<br />
 							<br />
@@ -26,59 +25,45 @@
 							<br />
 							<div class="logo"></div>
 						</div>
-						
-							<script>
-								var message = navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ? 'Presiona para Navegar' : 'Para navegar utiliza las flechas del Teclado o los Botones';
-								document.write( '<p style="color: rgba(0,0,0,0.5); text-shadow: none;">('+message+')</p>' );
-							</script>
-						
-					</div>
-				</div>
-				<div id="botones">
-					<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/1" %>
-					
-				</div>
-			</section>
-			
-<!--------------------- seccion -------------------------------------------------->	
-<!-------------------------------------------------------------------------------->
-			<section id="fondo">
-				<br />
-				<br />
-				<h3>INTRODUCCIÓN</h3>
-		<!--###################### INTRODUCCIÓN ##############################-->
-				<%= render :template => "controlador/introduccion"%>
-		<!--###################### INTRODUCCIÓN ##############################-->		
-			<div id="botones">
-					<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/" %>
-					<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/2" %>
-				</div>
-			</section>
-<!--------------------- seccion -------------------------------------------------->	
-<!-------------------------------------------------------------------------------->
-		<section id ="fondo">
-				<br />
-				<br />
-				<h3>Evaluación Inicial</h3>
-		<!--###################### EVALUACION INICIAL ##############################-->
-				<%= render :template => "evaluaciones/evalInicial" %> 
-		<!--###################### EVALUACION INICIAL ##############################-->
-			<div id="botones">
-				<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/1" %>
-				<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/3" %>	
+				<script>
+					var message = navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ? 'Presiona para Navegar' : 'Para navegar utiliza las flechas del Teclado o los Botones';
+					document.write( '<p style="color: rgba(0,0,0,0.5); text-shadow: none;">('+message+')</p>' );
+				</script>
 			</div>
-		</section>
+		</div>
+		<div id="botones">
+			<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/1" %>
+		</div>
+	</section>
+			
+	<section id="fondo">
+		<br />
+		<br />
+		<h3>INTRODUCCIÓN</h3>
+		<%= render :template => "controlador/introduccion"%>
+		<div id="botones">
+			<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/" %>
+			<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/2" %>
+		</div>
+	</section>
+	
+	<section id ="fondo">
+		<br />
+		<br />
+		<h3>Evaluación Inicial</h3>
+		<%= render :template => "evaluaciones/evalInicial" %> 
+		<div id="botones">
+			<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/1" %>
+			<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/3" %>	
+		</div>
+	</section>
 		
-		<!--###################### CONTENIDO TEMA 1 ##############################-->
+	<section >
+		<%= render :template => "controlador/estructuraSecuenciales" %>
+	</section>
 		
-		
-		
-		<section >
-			<%= render :template => "controlador/estructuraSecuenciales" %>
-		</section>
-		<!--###################### CONTENIDO TEMA 2 ##############################-->
-		<section>
-			<section id="fondo">
+	<section>
+		<section id="fondo">
 			<h3>Estructuras Selectivas</h3>
 			<div id="textos">
 				<div class="row">
@@ -108,32 +93,25 @@
 				<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/5" %>	
 			</div>
 		</section>
-				<%= render :template => "controlador/estructurasSelectivas" %>
-		</section>
-	<!---->
-	<!---->
-	<!--LEccion Ivan------------------------------------------------------>
+		<%= render :template => "controlador/estructurasSelectivas" %>
+	</section>
+	
 	<%= render :template => "controlador/estructurasIterativas" %>
-	<!---->	
-		
-			
-
-<!--------------------------------------FIn--------------------------------------------------->
-
-				<section id="fondo">
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<h1 class="inverted">Fin de la Lección</h1>					
-					<div id="botones">
-						<%= link_to image_tag("izquierda.png", alt: "arriba" ), "#/8/5" %>
-					<%= link_to image_tag("home.png", alt: "inicio" ), "#" %>
-					</div>
-				</section>
+	<section id="fondo">
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<h1 class="inverted">Fin de la Lección</h1>					
+		<div id="botones">
+			<%= link_to image_tag("izquierda.png", alt: "arriba" ), "#/8/5" %>
+			<%= link_to image_tag("home.png", alt: "inicio" ), "#" %>
 		</div>
+	</section>
+</div>
+
 <!-------MODALES-------->
 <div id="modalInstrucciones" class="reveal-modal medium">
 	<div class="panel callout radius">
@@ -141,21 +119,24 @@
 			<strong>Instrucciones</strong>
 		</p>
 	</div>
+	
 	<p align="justify">
 		- Presiona el botón "Problema" para visualizar el enunciado del ejercicio.
 	</p>
+	
 	<p align="justify">
 		- Arrastra las líneas de código del recuadro de la izquierda al recuadro de la derecha.
 	</p>
+	
 	<p align="justify">
 		- Después de tener las líneas necesarias, ordenalas para que el fragmento de código pueda ejecutarse correctamente.
 	</p>
+	
 	<p align="justify">
 		- Presiona el boton "Evaluar".
 	</p>
 	<a class="close-reveal-modal">&#215;</a>
 </div>
-
 <div id="modalInstrucciones2" class="reveal-modal medium">
 	<div class="panel callout radius">
 		<p class="lead" align="center">
@@ -173,27 +154,22 @@
 	</p>
 	<a class="close-reveal-modal">&#215;</a>
 </div>		
-		
-		
-		<div id="terminaEjercicio" class="reveal-modal medium">
-			<div class="panel callout radius">
-           <h4>¡En horabuena!</h4>
-		</div>
-		<p align="justify">
-			Haz completado satisfactoriamente el ejercicio
+<div id="terminaEjercicio" class="reveal-modal medium">
+	<div class="panel callout radius">
+    	<h4>¡En horabuena!</h4>
+	</div>
+	<p align="justify">
+		Haz completado satisfactoriamente el ejercicio
+	</p>
+			
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="problema" class="reveal-modal medium">
+	<div class="panel callout radius">
+		<p class="lead" align="center">
+			<strong>Problema</strong>
 		</p>
-			
-			<a class="close-reveal-modal">&#215;</a>
-		</div>
-		
-		
-		<div id="problema" class="reveal-modal medium">
-			<div class="panel callout radius">
-				<p class="lead" align="center">
-				<strong>Problema</strong>
-				</p>
-				</div>
-			<p  id="contenido-problema"></p>
-			
-			<a class="close-reveal-modal">&#215;</a>
-		</div>
+	</div>
+		<p  id="contenido-problema"></p>
+		<a class="close-reveal-modal">&#215;</a>
+</div>
