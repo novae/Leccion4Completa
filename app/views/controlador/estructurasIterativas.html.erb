@@ -1,11 +1,11 @@
 <!--------------------------Inicia Estructuras Iterativas (Primera Columna))------------------------------>		
-<section id="fondo">
-	<br />
-	<br />
-	<h1>Estructuras Iterativas</h1>
-	<br />
-	<br />
-	<%= image_tag("icono-ciclo.png")%>
+<section>
+	<div class="row">
+		<div class="eleven columns centered"><h1>Estructuras Iterativas</h1></div>
+	</div>
+	<div class="row">
+		<%= image_tag("icono-ciclo.png")%>
+	</div>
 	<div id="botones">
 		<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/1" %>
 		<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/3" %>
@@ -13,16 +13,23 @@
 </section>
 <!--------------------------Termina Portada Estructuras Iterativas------------------------->
 <!-----------------------------------Intro (Segunda Columna)---------------------------------------->	
-<section id="fondo">
-	<h2>Estructuras iterativas: repetir mientras, hasta, desde</h2>
-	<div id="textos">
-		<p>
-			Es muy común encontrar en los programas operaciones que se deben ejecutar un número repetido de veces. Si bien, las instrucciones son las mismas los datos sobre los que operan varían.
-			<br/>
-			<br/>
-			Para repetir varias veces un proceso determinado se hace uso de los ciclos repetitivos, a los cuales se les conoce con el nombre de estructura repetitiva, estructura iterativa, lazo, bucle o ciclo.
-		</p>
+<section>
+	<div class="row">
+		<div class="eleven columns centered"><h2>Estructuras iterativas: repetir mientras, hasta, desde</h2></div>
 	</div>
+	<div class="row">
+		<div class="twelve columns">
+			<div class="textos">
+				<p>
+				Es muy común encontrar en los programas operaciones que se deben ejecutar un número repetido de veces. Si bien, las instrucciones son las mismas los datos sobre los que operan varían.
+				<br/>
+				<br/>
+				Para repetir varias veces un proceso determinado se hace uso de los ciclos repetitivos, a los cuales se les conoce con el nombre de estructura repetitiva, estructura iterativa, lazo, bucle o ciclo.
+				</p>
+			</div>		
+		</div>
+	</div>
+	
 	<div id="botones">
 		<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/2" %>
 		<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/4" %>
@@ -32,60 +39,70 @@
 <!---------------------------------Segunda Columna--------------------------------------------------------------->
 <section>
 <!-----------------------------------Renglon 1 Columna 1------------------------------------------------------>					
-<section id="fondo">
-		<br />
-		<br />
-		<h3>Por lo general se pueden encontrar
-		<br />
-		tres tipos de ciclos:</h3>
-		<br />
-		<div id="textos">
-			<p>
-				•	Entrada Asegurada (while).
-				<br />
-				<br />
-				•	Hacer Mientras (do.. while).
-				<br />
-				<br />
-				•	Ciclo Controlado por Contador (for).
-				<br />
-			</p>
+	<section>
+		<div class="row">
+			<div class="eleven columns centered">
+				<h3>Por lo general se pueden encontrar tres tipos de ciclos:</h3>
+			</div>
 		</div>
+		<div class="textos">
+			<div class="row">
+				<div class="ten columns centered">
+					<ul class="left">
+						<li>Entrada Asegurada (while).</li>
+						<li>Hacer Mientras (do.. while).</li>
+						<li>Ciclo Controlado por Contador (for).</li>
+					</ul>
+				</div>	
+			</div>
+		</div>	
+		
 		<div id="botones">
 			<%= link_to image_tag("izquierda.png", alt: "Izquierda" ), "#/3" %>
 			<%= link_to image_tag("abajo.png", alt: "abajo" ), "#/4/1" %>
 		</div>
-</section>
+	</section>
 <!---------------------Termina Renglon 1 Columna 1------------------------------------------------------>					
 <!--------------------------------Renglon 2 Columna 1--------------------------------------------------->					
-<section id="fondo">
-		<h4>Mapa conceptual que ilustra los diferentes ciclos</h4>
-		<div id="imagenes">
-			<%= image_tag("Mapaciclos.png")%>
+	<section>
+		<div class="row">
+			<div class="eleven columns centered"><h4>Mapa conceptual que ilustra los diferentes ciclos</h4></div>
 		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<div id="imagenes">
+					<%= image_tag("Mapaciclos.png")%>
+				</div>	
+			</div>
+		</div>
+	
 		<div id="botones">
 			<%= link_to image_tag("arriba.png", alt: "Arriba" ), "#/4" %>
 			<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/4/2" %>
 		</div>
-	</section>
+</section>
 <!------------------------Termina Renglon 2 Columna 1--------------------------------------------------->					
 <!--------------------------------Renglon 3 Columna 1--------------------------------------------------->				
-<section id="fondo">
-		<h3>Funcionamiento de un Ciclo</h3>
-		<br />
-		<div id="textos">
-			<br />
-			<p align="justify">
-				Un ciclo funciona de la siguiente manera: evalúa una condición, de resultar cierta, realiza una acción o bloque de acciones, luego vuelve a evaluar la condición y si nuevamente resulta cierta, realiza la(s) acción(es).
-				<br/>
-				<br />
-				Cuando la condición dé cómo resultado falso, se sale del ciclo y continúa con la ejecución normal del programa.
-				<br/>
-			</p>
-			<br />
-			<br />
+	<section>
+		<div class="row">
+			<div class="eleven columns centered">
+				<h3>Funcionamiento de un Ciclo</h3>	
+			</div>
 		</div>
-		<br />
+		<div class="row">
+			<div class="twelve columns">
+				<div class="textos">
+					<p>
+					Un ciclo funciona de la siguiente manera: evalúa una condición, de resultar cierta, realiza una acción o bloque de acciones, luego vuelve a evaluar la condición y si nuevamente resulta cierta, realiza la(s) acción(es).
+					<br/>
+					<br />
+					Cuando la condición dé cómo resultado falso, se sale del ciclo y continúa con la ejecución normal del programa.
+					<br/>
+					</p>
+				</div>
+			</div>
+		</div>
+	
 		<div id="botones">
 			<%= link_to image_tag("arriba.png", alt: "Arriba" ), "#/4/1" %>
 			<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/4/3" %>
@@ -93,12 +110,20 @@
 	</section>
 <!------------------------Termina Renglon 3 Columna 1--------------------------------------------------->	
 <!--------------------------------Renglon 4 Columna 1--------------------------------------------------->					
-<section id="fondo">
-		<h4>Diagrama de Flujo de un Ciclo</h4>
-		<div id="imagenes">
-			<%= image_tag("flujo.png")%>
+	<section>
+		<div class="row">
+			<div class="eleven columns centered">
+				<h4>Diagrama de Flujo de un Ciclo</h4>
+			</div>
 		</div>
-		<br />
+		<div class="row">
+			<div class="eleven columns centered">
+				<div id="imagenes">
+					<%= image_tag("flujo.png")%>
+				</div>
+			</div>
+		</div>
+	
 		<div id="botones">
 			<%= link_to image_tag("arriba.png", alt: "Arriba" ), "#/4/2" %>
 			<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/4/4" %>
@@ -106,22 +131,23 @@
 	</section>
 <!------------------------Termina Renglon 4 Columna 1--------------------------------------------------->
 <!--------------------------------Renglon 5 Columna 1--------------------------------------------------->				
-<section id="fondo">
-		<br />
-		<h3>Para llevar el control de las repeticiones
-		<br />
-		usa un contador o una bandera.</h3>
-		<div id="textos">
-			<br />
-			<p align="justify">
-				- Una bandera es una variable de tipo lógico que sólo admite dos valores: cierto o falso.
-				<br/>
-				<br/>
-				- Un contador es una variable de tipo entero, que se declara al principio de la estructura y que ayuda en el programa a contabilizar el número de ejecuciones de una misma acción.
-				<br/>
-				<br/>
-			</p>
+	<section>
+		<div class="row">
+			<div class="eleven columns centered">
+				<h3>Para llevar el control de las repeticiones usa un contador o una bandera.</h3>	
+			</div>
 		</div>
+		<div class="textos">
+			<div class="row">
+				<div class="twelve columns">
+					<ul class="left">
+						<li>Una bandera es una variable de tipo lógico que sólo admite dos valores: cierto o falso.</li>
+						<li>Un contador es una variable de tipo entero, que se declara al principio de la estructura y que ayuda en el programa a contabilizar el número de ejecuciones de una misma acción.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
 		<div id="botones">
 			<%= link_to image_tag("arriba.png", alt: "Arriba" ), "#/4/3" %>
 			<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/4/5" %>
@@ -129,50 +155,59 @@
 	</section>
 <!------------------------Termina Renglon 5 Columna 1--------------------------------------------------->				
 <!--------------------------------Renglon 6 Columna 1--------------------------------------------------->			
-<section id="fondo">
-		<h3>Un contador tiene 3 valores distintos</h3>
-		<div id="textos">
-			<p align="justify">
-				<u>- Valor Inicial:</u> Es el valor con el cual se inicia el contador. Generalmente es cero. Esta asignación puede hacerse cuando se declara la variable.
-			</p>
-			<p align="justify">
-				<u>- Valor Final:</u> Después de la ejecución del ciclo el valor del contador, será distinto a su valor inicial, este puede ser mayor o menor que el mismo, todo depende si fue una cuenta creciente o decreciente.
-			</p>
-			<p align="justify">
-				<u>- Valor de Cambio:</u> Es el valor constante en el cual se irá incrementando el contador, este puede ser positivo o negativo; es decir, si la cuanta se realiza de manera ascendente o descendente.
-			</p>
+	<section>
+		<div class="row">
+			<div class="eleven columns centered"><h3>Un contador tiene 3 valores distintos</h3></div>
+		</div>
+		<div class="textos">
+			<div class="row">
+				<div class="twelve columns">
+					<ul class="left">
+						<li><u>Valor Inicial:</u> Es el valor con el cual se inicia el contador. Generalmente es cero. Esta asignación puede hacerse cuando se declara la variable.</li>
+						<li><u>Valor Final:</u> Después de la ejecución del ciclo el valor del contador, será distinto a su valor inicial, este puede ser mayor o menor que el mismo, todo depende si fue una cuenta creciente o decreciente.</li>
+						<li><u>Valor de Cambio:</u> Es el valor constante en el cual se irá incrementando el contador, este puede ser positivo o negativo; es decir, si la cuanta se realiza de manera ascendente o descendente.</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<div id="botones">
 			<%= link_to image_tag("arriba.png", alt: "Arriba" ), "#/4/4" %>
 			<%= link_to image_tag("derecha.png", alt: "Derecha" ), "#/4/6" %>
 		</div>
-</section>
+	</section>
 <!------------------------Termina Renglon 5 Columna 1--------------------------------------------------->						
 </section>
 <!--------------------------------------Tercera Columna------------------------------------------------->
 <section>	
-<!--------------------------------Renglon 1 Columna 2--------------------------------------------------->		
-<section id="fondo">
-		<br />
-		<br />
-		<h2>Estructura: Repetir Mientras</h2>
-		<div id="textos">
-			<p align="justify">
-				<br />
-				Mientras la condición sea verdadera, se ejecutarán las sentencias del bloque, es decir, ejecuta repetidamente el mismo bloque de código hasta que se cumpla una condición de terminación.
-				<br />
-				<br />
-				Hay cuatro partes en cualquier ciclo: inicialización, cuerpo, iteración y terminación.
-				<br />
-				<br />
-			</p>
+<!--------------------------------Renglon 1 Columna 2--------------------------------------------------->
+
+<section>
+	<div class="row">
+		<div class="ten columns centered">
+			<div class="row">
+				<div class="elven columns centerd">
+					<h2>Estructura: Repetir Mientras</h2>	
+				</div>
+			</div>
+	
+			<div class="row textos">
+				<div class="eleven columns centerd">
+					<p >
+						Mientras la condición sea verdadera, se ejecutarán las sentencias del bloque, es decir, ejecuta repetidamente el mismo bloque de código hasta que se cumpla una condición de terminación.
+						<br />
+						<br />
+						Hay cuatro partes en cualquier ciclo: inicialización, cuerpo, iteración y terminación.
+					</p>	
+				</div>
+			</div>
+			<div id="botones">
+				<%= link_to image_tag("izquierda.png", alt: "izquierda" ), "#/4/6" %>
+				<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/5/1" %>
+			</div>
 		</div>
-		<br />
-		<div id="botones">
-			<%= link_to image_tag("izquierda.png", alt: "izquierda" ), "#/4/6" %>
-			<%= link_to image_tag("abajo.png", alt: "Abajo" ), "#/5/1" %>
-		</div>
+	</div>	
 </section>
+
 <!------------------------Termina Renglon 1 Columna 2--------------------------------------------------->
 <!--------------------------------Renglon 2 Columna 2--------------------------------------------------->			
 <section id="fondo">

@@ -88,15 +88,24 @@ h1.inverted, h2.inverted, h3.inverted, h4.inverted {
 }
 
 
-#textos p{
-font-family:'MyFont';
-margin: 7px;
-padding: 7px;
-text-align:justify;
+.textos, .textos p{
+  font-family:'MyFont';
+  margin: 7px;
+  padding: 7px;
+  text-align:justify;
 }
-p.letrachica{
-	font-size: 16px;
+
+ul.left{
+    list-style: none;
+    text-align:left;
+    li:before {
+      margin:5px;
+      text-align:left,justify;
+      content: "- ";
+      color:#D904B5;
+    }
 }
+
 
 @mixin gradientes($R,$G,$B,$A,$Rs,$Gs,$Bs,$As){
  background: #feffff; /* Old browsers */
@@ -128,7 +137,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', end
   -moz-perspective: 600px;
   -moz-perspective-origin: 50% 25%;
   > section {
-    background-image: linear-gradient(bottom, rgb(2,142,181) 12%, rgb(0,155,198) 33%, rgb(41,192,230) 81%);
+  background-image: linear-gradient(bottom, rgb(2,142,181) 12%, rgb(0,155,198) 33%, rgb(41,192,230) 81%);
   background-image: -o-linear-gradient(bottom, rgb(2,142,181) 12%, rgb(0,155,198) 33%, rgb(41,192,230) 81%);
   background-image: -moz-linear-gradient(bottom, rgb(2,142,181) 12%, rgb(0,155,198) 33%, rgb(41,192,230) 81%);
   background-image: -webkit-linear-gradient(bottom, rgb(2,142,181) 12%, rgb(0,155,198) 33%, rgb(41,192,230) 81%);
