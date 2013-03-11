@@ -4,15 +4,9 @@ $(document).ready ->
   
   $(".logo").jqFloat
     width:1,
-    height:30,
+    height:10,
     speed:1000,
-    minHeight:280
-  
-  $('#tag1').tagsInput {
-    'height':'200px'
-    'width':'500px'
-    'defaultText':'Sentencia'
-  }
+    minHeight:10
   
   $("#draggable").draggable()  
 

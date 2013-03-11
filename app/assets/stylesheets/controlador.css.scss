@@ -1,20 +1,7 @@
-html, body {
-  font-family: 'MyFont';
-  background: #98ECFE;
-}
-
-ol {
-  list-style: decimal;
-  list-style-position: inside;
-}
-
-li, p {
-  margin-bottom: 8px;
-}
-
-h3{
+h3.titulos{
   text-align: center;
   text-transform: uppercase;
+  padding-top:30px; 
   font-family: 'Droid Sans', sans-serif;
   font-size: 280%;
   color: rgb(233, 91, 51);
@@ -22,7 +9,6 @@ h3{
   letter-spacing: 0.1em;
   text-shadow:
     0 0 3px rgb(233, 91, 51),
-    
     -1px 0 0 rgb(238, 238, 238),
     0 -1px 0 rgb(238, 238, 238),
 
@@ -36,19 +22,15 @@ h3{
     6px 8px 12px rgba(0,0,0,0.1),
     8px 10px 18px rgba(0,0,0,0.2),
     10px 15px 25px rgba(0,0,0,0.2),
-    10px 15px 35px rgba(0,0,0,0.2)
-
-
-    ;
+    10px 15px 35px rgba(0,0,0,0.2);
 }
-
-
 
 #area_1{
 
   background-color: #262721;
   color:#FFEAA7;
 }
+
 .contenido_ejercicio {
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -318,29 +300,28 @@ table{
   -webkit-border-radius: 15px 0px 0px 15px;
   border-radius: 15px 0px 0px 15px;
   background: none !important;
-  
-  bottom: auto !important;
-  float: none !important;
-  height: auto !important;
-  left: auto !important;
-  line-height: 1.1em !important;
-  margin: 0 !important;
-  outline: 0 !important;
-  overflow: visible !important;
-  padding: 0 !important;
-  position: static !important;
-  right: auto !important;
-  text-align: left !important;
-  top: auto !important;
-  vertical-align: baseline !important;
+  bottom: auto;
+  float: none;
+  height: auto;
+  left: auto;
+  line-height: 1.1em ;
+  margin: 0 ;
+  outline: 0;
+  overflow: visible;
+  padding: 0 ;
+  position: static ;
+  right: auto ;
+  text-align: left;
+  top: auto ;
+  vertical-align: baseline ;
   width: 300px;
-  box-sizing: content-box !important;
-  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
-  font-weight: normal !important;
-  font-style: normal !important;
-  font-size: 1em !important;
-  min-height: inherit !important;
-  min-height: auto !important;
+  box-sizing: content-box;
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  min-height: inherit;
+  min-height: auto;
   tbody{
     background-color:#1C1C1C;
     tr{
@@ -625,15 +606,15 @@ table{
 .logo{
   height:250px;
   width:250px;
-  padding:300px;
-  margin:10px;
-  position:absolute;
-  bottom:0;
-  left:0;
+  position:relative;
+  margin-top:20px;
+  
   background:url(LogoLeccion4.png) no-repeat 0 bottom;
-  z-index:7;
 }
-
+p#message{
+  position: relative;
+  top: 10px;
+}
 
 
 
